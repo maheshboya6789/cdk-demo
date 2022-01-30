@@ -1,5 +1,5 @@
 import * as cdk from '@aws-cdk/core';
-// import * as sqs from '@aws-cdk/aws-sqs';
+import * as sqs from '@aws-cdk/aws-sqs';
 
 export class CdkDemoStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
@@ -8,8 +8,8 @@ export class CdkDemoStack extends cdk.Stack {
     // The code that defines your stack goes here
 
     // example resource
-    // const queue = new sqs.Queue(this, 'CdkDemoQueue', {
-    //   visibilityTimeout: cdk.Duration.seconds(300)
-    // });
+    const queue = new sqs.Queue(this, 'CdkDemoQueue', {
+      queueName:"demo-jan29",
+    });
   }
 }
