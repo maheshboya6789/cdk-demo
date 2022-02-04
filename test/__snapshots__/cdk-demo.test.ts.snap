@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test app for snapshot 1`] = `
+Object {
+  "Resources": Object {
+    "CdkDemoQueue32E7553B": Object {
+      "DeletionPolicy": "Delete",
+      "Properties": Object {
+        "QueueName": "demo-jan29",
+      },
+      "Type": "AWS::SQS::Queue",
+      "UpdateReplacePolicy": "Delete",
+    },
+  },
+}
+`;
